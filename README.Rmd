@@ -1,5 +1,16 @@
+--- 
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  out.width = "100%"
+)
+```
 
 # Supplementary Materials for: *“Penalized rank-one approximation to functional partial least-squares regression over complex domains”*
 
@@ -9,21 +20,21 @@
 
 ## Overview
 
-- Folder **Animated Betas** contains 3D animations of the estimated
-  coefficient functions from Section 5: “Application to brain
-  connectivity data”.
+* Folder **Animated Betas** contains 3D animations of the estimated coefficient
+functions from Section 5: “Application to brain connectivity data”.
 
-- Folders **1D_simulations** and **2D_simulations** contains the scripts
-  required to reproduce the simulations in Section 4: “Simulation
-  studies”. The simulations depend on the R package `penR1FPLS`.
+* Folders **1D_simulations** and **2D_simulations** contains the scripts required
+to reproduce the simulations in Section 4: “Simulation studies”. The simulations
+depend on the R package `penR1FPLS`.
 
 ## Installing the R package `penR1FPLS`
 
 To install `penR1FPLS` in R use:
 
-``` r
+```{r, include = TRUE, eval=FALSE}
 devtools::install_github("hhroig/penR1FPLS", dependencies = TRUE)
 ```
+    
 
 ## 1D simulations
 
