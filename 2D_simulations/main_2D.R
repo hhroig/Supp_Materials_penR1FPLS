@@ -11,7 +11,7 @@ library(stringr)
 
 
 # length of the penalties grid:
-num_lambdas <- 20
+num_lambdas <- 100
 
 lambdas_in  <-  seq(-10, 12, length.out = num_lambdas)
 lambdas_in  <-  10^(lambdas_in)
@@ -21,7 +21,7 @@ n_basis_tps <- 10
 
 # number of repetitions (total_reps - rep_starts)
 rep_starts <- 1
-total_reps  <-  5
+total_reps  <-  100
 
 # number K of folds to do cross-validation:
 k_folds <- 5
@@ -38,11 +38,10 @@ x <- seq(0, 1, length.out = num_grid_x_axes)
 y <- seq(0, 1, length.out = num_grid_y_axes)
 
 # Values of R^2 to consider (more than one is possible):
-Rsq_lst = c(0.9)
+Rsq_lst <- 0.9
 
 # True Betas (3 is "Double Exponential", 5 is "Monkey Saddle")
-# beta_num_lst = c(3, 5)
-beta_num_lst = 5
+beta_num_lst  <-  c(3, 5)
 
 # output folder:
 out_folder <- "2D_simulations/results_2D/"
