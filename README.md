@@ -9,6 +9,11 @@
 
 ## Overview
 
+You can download this R Project to reproduce our simulation studies and
+check the three-dimensional (3D) animations of the estimated coefficient
+functions relative to the real data application. The repository is
+organized into three sub-folders:
+
 - Folder **Animated Betas** contains 3D animations of the estimated
   coefficient functions from *Section 5: “Application to brain
   connectivity data”*.
